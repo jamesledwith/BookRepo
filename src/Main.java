@@ -8,14 +8,14 @@ public class Main {
 		while(true)
 		{
 			//Add book to repository.  
-			/*@SuppressWarnings("resource")
+			@SuppressWarnings("resource")
 			Scanner input = new Scanner(System.in);
 			System.out.println("Please enter name of the Book: ");
 			String name = input.nextLine();
 			System.out.println("Please enter name of the Author: ");
 			String author = input.nextLine();
 			System.out.println("Please ISBN no: ");
-			long isbn = input.nextLong();*/
+			long isbn = input.nextLong();
 			
 			//Remove book from repository.  
 			
