@@ -53,7 +53,7 @@ public class Main {
 		String name = input.nextLine();
 		for(Book books: list) {
 			if (name.equals(books.getTitle()))
-			list.remove();
+			list.remove(books);
 			System.out.println(books.getTitle() + " Deleted Sucessfully");
 		}
 		System.out.println(list);
