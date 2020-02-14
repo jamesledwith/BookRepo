@@ -1,0 +1,32 @@
+Project - Book repository 
+ 
+Hard-back Libraries have requested you to create a single terminal system for their mobile library 
+that provides book lending services to rural areas. 
+The project should contain the following features: 
+ 
+Authenticated User login 
+There are three types of user 
+o Administrator 
+o Guest 
+o Registered Users 
+ 
+Administrator Features 
+· Add book to repository.  
+· Remove book from repository.  
+· Mark book as available/unavailable. 
+· Add/Remove registered users. 
+ 
+Guest Features 
+· Search/Partial Search for book by:  
+	o Title 
+	o Author 
+	o ISBN No. 
+
+· Check if book is available.  
+ 
+Registered Users 
+· Registered users have the same privileges as guest users. 
+· Check out books. 
+· Return books. 
+
+ 
