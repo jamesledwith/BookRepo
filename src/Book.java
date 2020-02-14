@@ -1,5 +1,3 @@
-import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Book {
 
@@ -8,9 +6,9 @@ public class Book {
 	private long Isbn;
 	
 	public Book() { //default constructor
-		Title = "First Book";
-		Author ="John Doe";
-		Isbn = 01;
+//		Title = "First Book";
+//		Author ="John Doe";
+//		Isbn = 01;
 	}
 	
 	public Book(String title, String author, long isbn) {
@@ -21,7 +19,7 @@ public class Book {
 	
 	@Override
 	public String toString() {
-		return String.format("Book: Title=%s, Author=%s, Isbn=%s \n", Title, Author, Isbn);
+		return String.format("Book: Title=%s, Author=%s, Isbn=%s"+ "\n", Title, Author, Isbn);
 	}
 
 	public String getAuthor() {
@@ -44,5 +42,6 @@ public class Book {
 	public void setIsbn(long isbn) {
 		Isbn = isbn;
 	}	
+
 	
 }
