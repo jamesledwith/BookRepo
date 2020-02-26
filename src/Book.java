@@ -21,15 +21,15 @@ public class Book {
 	
 	@Override
 	public String toString() {
-		Book[] arr;
-		for(int i = 0; i < arr .length; i++)
-		{
-		   for(int j = 0; j < arr[0].length; j++)
-		   {
-		      System.out.printf("%s ", arr[i][j]);
-		   }
-		   System.out.println();
-		}
+//		Book[] arr;
+//		for(int i = 0; i < arr .length; i++)
+//		{
+//		   for(int j = 0; j < arr[0].length; j++)
+//		   {
+//		      System.out.printf("%s ", arr[i][j]);
+//		   }
+//		   System.out.println();
+//		}
 		String result = String.format("Book: Title=%s, Author=%s, Isbn=%s, Available=%s"+ "\n", Title, Author, Isbn, Availability);
 
 		return result;	}

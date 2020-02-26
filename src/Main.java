@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -24,11 +25,49 @@ public class Main {
 		list.add(book4);
 		list.add(book5);
 		
-	
-		/*Iterator<Book> llIterator = list.iterator();
-		while (llIterator.hasNext()) {
-			System.out.println(llIterator.next());
-		}*/
+
+		System.out.println(list.toString());
+		//Mark book as available/unavailable.
+		//algo- Find Book by name, set available
+		
+		while(true) {
+
+			System.out.println("Enter the name of the book you want to mark as available/unavailable");
+			String name = input.nextLine();
+			for(Book books: list) {
+				if (name.equals(books.getTitle())) {
+					System.out.println("Enter A to set as available or Enter U to set as Unavailable");
+					String choiceAU = input.nextLine();
+					
+					if (choiceAU == "a") {
+						books.setAvailability(true);
+					}
+					else if (choiceAU == "u") {
+						books.setAvailability(false);
+					}
+
+					System.out.println(" Changed Sucessfully to" + books.isAvailability());
+					}
+				//else if (!name.equals(books.getTitle())) { 
+					//System.out.println("Book does not exist ");
+				}	
+
+			System.out.println(list.toString());
+		}
+		
+		
+		//Add/Remove registered users. 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 			
 //		while(true)
 //		{
@@ -45,12 +84,10 @@ public class Main {
 ////			Book bookAdd = new Book(name, author, isbn);
 ////			list.add(bookAdd);
 			
-
-		System.out.println(list.toString());
 		
 		//Remove book from repository. 	
 		//algorithm - enter name, check names match , delete book , print list
-		while(true){
+		/*while(true){
 		System.out.println("Enter the name of the book you want to delete");
 		String name = input.nextLine();
 		for(Book books: list) {
@@ -62,24 +99,14 @@ public class Main {
 				System.out.println("Book does not exist ");
 			}		
 		System.out.println(list);
-			}
-		}
-//		if (name == llIterator.next().getAuthor()) {
-//			llIterator.next().i
-//			llIterator.remove();
-//		}
-//		System.out.println(list);
+			}*/
 		
-		
+		/*Iterator<Book> llIterator = list.iterator();
+		while (llIterator.hasNext()) {
+			System.out.println(llIterator.next());
+		}*/
 			
-			//Mark book as available/unavailable. 
-			//Add/Remove registered users. 
-
-			
-			
-			
-			//System.out.println(list);
 		}
-	//}
-
 }
+
+
